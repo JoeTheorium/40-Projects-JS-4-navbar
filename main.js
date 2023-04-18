@@ -1,14 +1,14 @@
 const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');
+const close = document.querySelector('.menu-close');
 
-menuIcon.addEventListener('click', function (event) {
-    const target = event.target;
-
-    if (target.matches('.fa-bars')) {
+menuIcon.addEventListener('click', function () {
         menu.classList.add('menu--visible');
-        target.classList.replace('fa-bars', 'fa-times');
-    } else if (target.matches('.fa-times')) {
+        menuIcon.style.display = 'none'
+        close.style.display = 'block'
+});    
+close.addEventListener('click', function () {
         menu.classList.remove('menu--visible');
-        target.classList.replace('fa-times', 'fa-bars');
-    }
+        menuIcon.style.display = 'block'
+        close.style.display = 'none'
 });
