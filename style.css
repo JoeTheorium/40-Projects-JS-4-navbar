@@ -41,3 +41,40 @@
 .menu--visible {
     display: block;
 }
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .menu-icon i {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        top: 50px;
+    }
+
+    .menu li {
+        border-top: 1px solid #ccc;
+    }
+
+    .menu a {
+        padding: 0.5em;
+    }
+
+    .menu--visible {
+        display: block;
+        opacity: 0;
+        animation: fade-in 0.3s ease forwards;
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
