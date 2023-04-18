@@ -78,3 +78,8 @@
         }
     }
 }
+
+/* Cerrar lemnú */
+.menu-close {
+    display: none;
+}
