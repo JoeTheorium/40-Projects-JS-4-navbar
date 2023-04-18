@@ -1,12 +1,13 @@
 /* Barras */
-.menu-icon {
+div i {
+    font-size: 3.5em;
+    position: absolute;
+    top: 0.2em;
+    right: .2em;
     display: inline-block;
     cursor: pointer;
 }
 
-.menu-icon i {
-    font-size: 2em;
-}
 
 /* Menú */
 .menu {
@@ -44,10 +45,6 @@
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
-    .menu-icon i {
-        font-size: 1.5em;
-    }
-
     .menu {
         top: 80px;
     }
